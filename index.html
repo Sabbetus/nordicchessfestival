@@ -135,7 +135,7 @@
 
     h1 {
       font-family: var(--font-display);
-      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-size: clamp(2rem, 8vw, 7rem);
       font-weight: 600;
       line-height: 0.95;
       letter-spacing: -0.01em;
@@ -216,9 +216,10 @@
 
     .highlight p {
       font-size: 0.8rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--ice);
+      line-height: 1.6;
     }
 
     .highlight strong {
@@ -329,17 +330,20 @@
 
     /* ---- RESPONSIVE ---- */
     @media (max-width: 768px) {
-      header { padding: 1.5rem; }
-      .hero { padding: 3rem 1.5rem 2rem; }
-      .stats { gap: 1.5rem; }
+      header { padding: 1.25rem 1.25rem; }
+      .hero { padding: 2.5rem 1.25rem 2rem; }
+      .hero-eyebrow { font-size: 0.6rem; letter-spacing: 0.12em; }
+      .hero-sub { font-size: 0.95rem; }
+      .stats { gap: 1.25rem; }
       .stat-divider { display: none; }
-      .highlight { padding: 1rem 1.5rem; }
+      .highlight { padding: 1rem 1.25rem; }
+      .highlight p { font-size: 0.7rem; letter-spacing: 0.04em; }
       .newsletter-section {
         grid-template-columns: 1fr;
-        padding: 3rem 1.5rem;
-        gap: 2.5rem;
+        padding: 2.5rem 1.25rem;
+        gap: 2rem;
       }
-      footer { padding: 1.5rem; }
+      footer { padding: 1.25rem; }
       .header-tag { display: none; }
     }
   </style>
@@ -370,7 +374,7 @@
     <main>
       <section class="hero">
         <p class="hero-eyebrow">Kangasala, Finland · 12–20 June 2027</p>
-        <h1 style="white-space: nowrap;">Nordic <em>Chess</em> Festival</h1>
+        <h1>Nordic <em>Chess</em> Festival</h1>
         <p class="hero-sub">
           Quite possibly the biggest international chess tournament ever held in Finland.
           Nine days. Nine rounds. Side events. Strong grandmasters, top streamers,
