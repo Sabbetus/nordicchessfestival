@@ -18,8 +18,8 @@
       --ice-dim: rgba(126, 200, 227, 0.15);
       --ice-border: rgba(126, 200, 227, 0.25);
       --white: #f0ede8;
-      --muted: #666;
-      --muted2: #444;
+      --muted: #999;
+      --muted2: #666;
       --font-display: 'Cormorant Garamond', Georgia, serif;
       --font-body: 'DM Sans', sans-serif;
     }
@@ -153,7 +153,7 @@
       font-size: clamp(1rem, 2vw, 1.2rem);
       font-weight: 300;
       color: var(--muted);
-      max-width: 560px;
+      max-width: 720px;
       line-height: 1.7;
       margin-top: 1.75rem;
       margin-bottom: 2.5rem;
@@ -165,7 +165,7 @@
       display: flex;
       gap: 2.5rem;
       flex-wrap: wrap;
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       animation: fadeUp 0.8s 0.65s ease both;
     }
 
@@ -229,11 +229,20 @@
     /* ---- NEWSLETTER SECTION ---- */
     .newsletter-section {
       padding: 5rem 3rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
       align-items: start;
       animation: fadeUp 0.8s 0.85s ease both;
+    }
+
+    .newsletter-copy {
+      flex: 1 1 280px;
+      max-width: 380px;
+    }
+
+    .form-wrap {
+      flex: 0 0 440px;
     }
 
     .newsletter-copy h2 {
@@ -343,10 +352,11 @@
       .highlight { padding: 1rem 1.25rem; }
       .highlight p { font-size: 0.7rem; letter-spacing: 0.04em; }
       .newsletter-section {
-        grid-template-columns: 1fr;
         padding: 2.5rem 1.25rem;
         gap: 2rem;
       }
+      .newsletter-copy { max-width: 100%; }
+      .form-wrap { flex: 0 0 100%; }
       footer { padding: 1.25rem; }
       .header-tag { display: none; }
     }
@@ -406,7 +416,7 @@
       <!-- HIGHLIGHT BAND -->
       <div class="highlight">
         <span class="highlight-icon">♟</span>
-        <p><strong>Open Tournament · Side Events · Guaranteed prize fund</strong> &nbsp;·&nbsp; The full programme launches this autumn</p>
+        <p><strong>Open Tournament · Side Events · Large Prize Fund</strong> &nbsp;·&nbsp; Full Programme This Autumn</p>
       </div>
 
       <!-- NEWSLETTER -->
@@ -430,8 +440,8 @@
 
     <!-- FOOTER -->
     <footer>
+      <p style="color: var(--muted);">Questions? Reach us at <a href="mailto:info@nordicchess.fi" style="color: var(--ice); text-decoration: none;">info@nordicchess.fi</a></p>
       <p>Nordic Chess Festival ry</p>
-      <p class="ice">♚ &nbsp; Kangasala, Finland</p>
     </footer>
 
   </div>
