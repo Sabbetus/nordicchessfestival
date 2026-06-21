@@ -488,6 +488,32 @@
 
     footer .ice { color: var(--ice); opacity: 0.6; }
 
+    /* ---- PARTNER STRIP ---- */
+    .partner-strip {
+      padding: 0.9rem 3rem;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .partner-strip p {
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted2);
+    }
+
+    .partner-strip a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .partner-strip a:hover {
+      color: var(--ice);
+      border-color: var(--ice-border);
+    }
+
     /* ---- ANIMATIONS ---- */
     @keyframes fadeUp {
       from { opacity: 0.15; transform: translateY(20px); }
@@ -518,6 +544,7 @@
       }
       .newsletter-copy { max-width: 100%; }
       footer { padding: 1.25rem; }
+      .partner-strip { padding: 0.75rem 1.25rem; }
       .header-tag { display: none; }
     }
   </style>
@@ -603,6 +630,11 @@
         </div>
       </section>
     </main>
+
+    <!-- PARTNER STRIP -->
+    <div class="partner-strip">
+      <p>Partnering with <a href="https://chesstournamentcalendar.com" target="_blank" rel="noopener">Chess Tournament Calendar</a></p>
+    </div>
 
     <!-- FOOTER -->
     <footer>
